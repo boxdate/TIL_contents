@@ -129,7 +129,21 @@ IPAの資料から
 青山　幹雄先生
 [REBOKに基づく要求分析実践ガイド](https://www.kindaikagaku.co.jp/book_list/detail/9784764904927/)
 
-◇EARS
+◇言葉は難しいことを理解する
+日本語は、読み手や聞き手に類推させるハイコンテクストな言語です。書く側、話す側が相手に伝わるだろうで文章を作成すると、読み手、利き手が行間を**類推すること**になります。日本語は、相手の類推を強く求める言語（≒話者が多い）です。（その代わり、言葉にいろいろな意味や雰囲気を持たせることができるので、美しい言語でもあります。）
+この類推こそが、要求のすれ違いを生みます。
+
+参考
+[日本語はハイコンテクストで外国人に分かりづらい？ビジネスで使えるコミュニケーション術4つ](https://asiatojapan.com/jgs/recruitment-how-to/high-context/)
+
+有名な顧客が本当に必要だったもの（木とブランコ）の絵は、いろいろな人たちの間で、類推が発生した結果起きたと、私は考えています。
+![Alt text](image-2.png)
+
+（[顧客が本当に必要だったもの](https://dic.nicovideo.jp/a/%E9%A1%A7%E5%AE%A2%E3%81%8C%E6%9C%AC%E5%BD%93%E3%81%AB%E5%BF%85%E8%A6%81%E3%81%A0%E3%81%A3%E3%81%9F%E3%82%82%E3%81%AE) より引用）
+
+**背景情報**や**理由**を記載し、**明確**にかつ**一意**に伝えることが要求開発においてとても重要です。
+
+◇要求を書くための構文がある
 EARSについての説明
 
 山本修一郎先生の[Business Communication 81:要求テンプレート](https://www.bcm.co.jp/site/youkyu/youkyu81.html)より、EARSにつて引用します。
@@ -145,7 +159,7 @@ EARSには５つの構文があります。
 4)State-driven requirements（状態型）
 5)Optional features
 
-◇USDM
+◇要求を構造化する
 要求を平文で書くとのっぺりとして、読みにくく関係性や、背景情報（理由や目的）を取得しにくいです（個人の感想ですが。。。）
 システムクリエイツの故清水義男さんが考案されたUSDMを使用すると、要求の階層（空間）感を得ることができます。
 認知特性としても、平文よりも構造を持った文章になるので、読みやすさ・理解のしやすさが上がります（そのように感じています）。
@@ -154,8 +168,224 @@ EARSには５つの構文があります。
 
 [【チュートリアル】そうだったのか！ＵＳＤＭ](https://affordd.jp/wp-content/uploads/conference2015/affordd_conference2015_tutorial.pdf)
 
-要求②へお作法を適用する。
-EARSとUSDMを埋め込んでみる
+◇要求のための辞書
+
+
+要求②へ、EARSとUSDMを適用してみたいと思います。
+要求②は、基本的に偏在型で書ききることができると思います。
+こちらが適用した例です。
+（いつもExcel使っているので、Markdownにhtmlで表を表現してUSDM書くの新鮮でした。面白い！）
+
+<table>
+<tr>
+  <th colspan=4>カエルの絵を描くための要仕様</th>
+</tr>
+<tr bgcolor="#fffff0">
+  <td>要求</td>
+  <td>RegFlog-01</td>
+  <td colspan=2>絵を描く人は提供した紙とペンを使用する必要がある</td>
+</tr>
+<tr bgcolor="#fffff0">
+  <td></td>
+  <td>理由</td>
+  <td colspan=2>決まった用紙とペンを使用して欲しいから</td>
+</tr>
+<tr bgcolor="#fffff0">
+  <td></td>
+  <td>説明</td>
+  <td colspan=2>上位要求の説明</td>
+</tr>
+<tr bgcolor="#e0ffff">
+  <td></td>
+  <td colspan=3>＜カエルの顔を描くための道具＞</td>
+</tr>
+<tr bgcolor="#e0ffff">
+  <td></td>
+  <td>要求</td>
+  <td>RegFlog-01-01</td>
+  <td>絵を描く人は、提供されたA4用紙を使用する必要がある</td>
+</tr>
+<tr bgcolor="#e0ffff">
+  <td></td>
+  <td></td>
+  <td>理由</td>
+  <td>データに取り込むため同じ<br>用紙サイズで統一する必要があるから</td>
+</tr>
+<tr bgcolor="#e0ffff">
+  <td></td>
+  <td></td>
+  <td>説明</td>
+  <td>下位要求の説明</td>
+</tr>
+<tr bgcolor="#e0ffff">
+  <td></td>
+  <td>要求</td>
+  <td>RegFlog-01-02</td>
+  <td>絵を描く人は、提供されたペン（緑と黒）を使用する必要がある</td>
+</tr>
+<tr bgcolor="#e0ffff">
+  <td></td>
+  <td></td>
+  <td>理由</td>
+  <td>決められた色を使用して、絵を描いてほしいから</td>
+</tr>
+<tr bgcolor="#e0ffff">
+  <td></td>
+  <td></td>
+  <td>説明</td>
+  <td>下位要求の説明</td>
+</tr>
+<tr bgcolor="#fffff0">
+  <td>要求</td>
+  <td>RegFlog-02</td>
+  <td colspan=2>絵を描く人は、カエルの顔を書く必要がある</td>
+</tr>
+<tr bgcolor="#fffff0">
+  <td></td>
+  <td >理由</td>
+  <td colspan=2>絵を描いてほしい人は、カエルの絵を描いてほしいと思っているから</td>
+</tr>
+<tr bgcolor="#fffff0">
+  <td></td>
+  <td>説明</td>
+  <td colspan=2>上位要求の説明</td>
+</tr>
+<tr bgcolor="#e0ffff">
+  <td></td>
+  <td colspan=3>＜カエルの顔の輪郭＞</td>
+</tr>
+<tr bgcolor="#e0ffff">
+  <td></td>
+  <td>要求</td>
+  <td>RegFlog-02-01</td>
+  <td>絵を描く人は、カエルの輪郭を描く必要がある</td>
+</tr>
+<tr bgcolor="#e0ffff">
+  <td></td>
+  <td></td>
+  <td>理由</td>
+  <td>顔には輪郭が必要だから</td>
+</tr>
+<tr bgcolor="#e0ffff">
+  <td></td>
+  <td></td>
+  <td>説明</td>
+  <td>下位要求の説明</td>
+</tr>
+
+<tr>
+  <td></td>
+  <td></td>
+  <td>SpecFlog-02-01-01</td>
+  <td>カエルの顔の輪郭と目を書く場合、緑色のペンを使う</td>
+</tr>
+<tr>
+  <td></td>
+  <td></td>
+  <td>SpecFlog-02-01-02</td>
+  <td>カエルの顔の輪郭は、大きい”〇”で書く</td>
+</tr>
+<tr>
+  <td></td>
+  <td></td>
+  <td>SpecFlog-02-01-03</td>
+  <td>カエルの目は、”〇”を2つ、顔の輪郭よりも小さく書く</td>
+</tr>
+<tr>
+  <td></td>
+  <td></td>
+  <td>SpecFlog-02-01-04</td>
+  <td>カエルの目は、”〇”を2つ、顔の輪郭よりも小さく書く</td>
+</tr>
+<tr>
+  <td></td>
+  <td></td>
+  <td>SpecFlog-02-01-02</td>
+  <td>カエルの目は顔の輪郭の外側、かつ12時を基準点（カエルの顔を真上から見たとき）とし、1時と11時の位置になるように書く</td>
+</tr>
+<tr bgcolor="#e0ffff">
+  <td></td>
+  <td colspan=3>＜カエルの口＞</td>
+</tr>
+<tr bgcolor="#e0ffff">
+  <td></td>
+  <td>要求</td>
+  <td>RegFlog-02-02</td>
+  <td>絵を描く人は、カエルの口を描く必要がある。</td>
+</tr>
+<tr bgcolor="#e0ffff">
+  <td></td>
+  <td></td>
+  <td>理由</td>
+  <td>カエルの顔に口があったほうがかわいいから</td>
+</tr>
+<tr bgcolor="#e0ffff">
+  <td></td>
+  <td></td>
+  <td>説明</td>
+  <td>下位要求の説明</td>
+</tr>
+<tr>
+  <td></td>
+  <td></td>
+  <td>SpecFlog-02-02-01</td>
+  <td>カエルの口は、黒いペンを使う</td>
+</tr>
+<tr>
+  <td></td>
+  <td></td>
+  <td>SpecFlog-02-02-02</td>
+  <td>カエルの口は、”―”を2つ使う</td>
+</tr>
+<tr>
+  <td></td>
+  <td></td>
+  <td>SpecFlog-02-02-03</td>
+  <td>カエルの口は、アルファベットのVの字の形にする</td>
+</tr>
+<tr>
+  <td></td>
+  <td></td>
+  <td>SpecFlog-02-02-04</td>
+  <td>カエルの口は、カエルの顔の中心に描く</td>
+</tr>
+<tr bgcolor="#fffff0">
+  <td>要求</td>
+  <td>RegFlog-03</td>
+  <td colspan=2>絵を描く人は、決められた時間内で絵を描く必要がある。</td>
+</tr>
+<tr bgcolor="#fffff0">
+  <td></td>
+  <td>理由</td>
+  <td colspan=2>絵を描く人の要求の読解時間と絵を描く時間を統一するため</td>
+</tr>
+<tr bgcolor="#fffff0">
+  <td></td>
+  <td>説明</td>
+  <td colspan=2>上位要求の説明</td>
+</tr>
+<tr bgcolor="#e0ffff">
+  <td></td>
+  <td colspan=3>＜カエルの顔を描く時間＞</td>
+</tr>
+<tr bgcolor="#e0ffff">
+  <td></td>
+  <td>要求</td>
+  <td>RegFlog-03-01</td>
+  <td>絵を描く人は、5分以内に絵を描く必要がある。</td>
+</tr>
+<tr bgcolor="#e0ffff">
+  <td></td>
+  <td></td>
+  <td>理由</td>
+  <td>この要求が絵を描く人にとって、理解しやすいものであるか調査するため</td>
+</tr>
+<tr bgcolor="#e0ffff">
+  <td></td>
+  <td></td>
+  <td>説明</td>
+  <td>下位要求の説明</td>
+</table>
 
 <a id="要求のライフサイクルを考える"></a>
 #### 要求のライフサイクルを考える
