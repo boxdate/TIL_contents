@@ -1,0 +1,63 @@
+@startmindmap
+
+<style>
+mindmapDiagram {
+    node {
+        BackgroundColor orange
+    }
+    :depth(1) {
+      BackGroundColor Lightskyblue
+    }
+    :depth(2) {
+      BackGroundColor MistyRose
+    }
+    :depth(3) {
+      BackGroundColor LemonChiffon
+    }
+    :depth(4) {
+      BackGroundColor LightCyan
+    }
+}
+</style>
+
+* LEDの点滅を使用して、気分を変えたい
+** Arduinoのボタンを押したとき、ユーザーはArduino上のLEDをいい感じにチカチカを変更したい
+*** AC:\n Arduinoのボタンがユーザーに対するI/Fであること
+**** TVP:\n Arduinoのボタンを押したとき、ArduinoのLED制御できることを確認する
+***** Given:\n ・Arduinoにボタンがあること\n ・ボタン入力が有効になっていること
+***** When:\n ユーザーがArduinoのボタンを押したとき、
+***** Then:\n Arduinoは、ボタンが押されたことを感知する
+**** ステークホルダー要求：\n  ユーザーがArduinoのボタンを押したとき、Arduinoは、ボタンが押されたことを感知すること
+*** AC:\n Arduinoで、LEDの点灯ができること
+**** TVP:\n ボタン入力で、ArduinoのLEDを点灯できることを確認する
+***** Given:\n ・Arduinoにボタンがあること\n ・ボタン入力が有効になっていること\n ・ボタンでLEDが制御できること
+***** When:\n ユーザーがArduinoのボタンを押したとき、
+***** Then:\n Arduinoは、LEDを点灯させる
+**** ステークホルダー要求：\n ユーザーがArduinoのボタンを押したとき、Arduinoは、LEDを点灯させること
+*** AC:\n Arduinoで、LEDの消灯ができること
+**** TVP:\n ボタン入力で、ArduinoのLEDを消灯できることを確認する
+***** Given:\n ・Arduinoにボタンがあること\n ・ボタン入力が有効になっていること\n ・ボタンでLEDが制御できること
+***** When:\n ユーザーがArduinoのボタンを押したとき、
+***** Then:\n Arduinoは、LEDを消灯させる
+**** ステークホルダー要求：\n ユーザーがArduinoのボタンを押したとき、Arduinoは、LEDを消灯させること
+*** AC:\n Arduinoで、LEDの点滅ができること
+**** TVP:\n ボタン入力で、ArduinoのLEDを点滅できることを確認する
+***** Given:\n ・Arduinoにボタンがあること\n ・ボタン入力が有効になっていること\n ・ボタンでLEDの点灯消灯時間できること
+***** When:\n ユーザーがArduinoのボタンを押したとき
+***** Then:\n Arduinoは、LEDを点滅させる
+**** ステークホルダー要求：\n ユーザーがArduinoのボタンを押したとき、Arduinoは、LEDを点滅させること
+** Arduino上のLEDが点滅しているとき、ArduinoのLEDは、LEDの点滅間隔を早くしたり、遅くできるようにしたい
+*** AC:\n Arduinoが点滅を制御できること
+**** TVP:\n LEDの点滅を点灯消灯時間で調整できることを確認する
+***** Given:\n ・ボタン入力が有効になっていること\n ・ボタンでLEDの点灯消灯時間できること
+***** When:\n ユーザーが、Arduinoのボタンを押したとき
+***** Then:\n Arduinoは、LEDの点灯消灯時間を変更する
+**** ステークホルダー要求：\n ユーザーが、Arduinoのボタンを押したとき、Arduinoは、LEDの点灯消灯時間を変更すること
+*** AC:\n ボタン入力の回数で、LEDの点滅間隔を変更できること
+**** TVP:\n ボタン入力の回数で、LEDの点灯消灯時間を調整できることを確認する
+***** Given:\n ・ボタン入力が有効になっていること\n ・ボタンでLEDの点灯消灯時間できること
+***** When:\n ユーザーが、Arduinoのボタンを押したとき
+***** Then:\n Arduinoは、ボタンが押された回数に応じてLEDの点滅間隔を変更する
+**** ステークホルダー要求：\n ユーザーが、Arduinoのボタンを押したとき、Arduinoは、ボタンが押された回数に応じてLEDの点滅間隔を変更すること
+
+@endmindmap
