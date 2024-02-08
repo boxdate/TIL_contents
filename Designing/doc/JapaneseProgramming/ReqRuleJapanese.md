@@ -207,72 +207,72 @@ LCReq-06
 
 <table>
 <tr>
-  <th colspan=4>カエルの絵を描くための要仕様</th>
+  <th colspan=4>Lチカの要求仕様</th>
 </tr>
 <tr bgcolor="#fffff0">
   <td>要求</td>
-  <td>RegFlog-01</td>
-  <td colspan=2>絵を描く人は提供した紙とペンを使用する必要がある</td>
+  <td>LCReq-01</td>
+  <td colspan=2>ユーザーがArduino上にあるボタンを押したとき、ArduinoはArduinoのボード上のボタンを押されたことを検知する必要がある</td>
 </tr>
 <tr bgcolor="#fffff0">
   <td></td>
   <td>理由</td>
-  <td colspan=2>決まった用紙とペンを使用して欲しいから</td>
+  <td colspan=2></td>
 </tr>
 <tr bgcolor="#fffff0">
   <td></td>
   <td>説明</td>
-  <td colspan=2>自習用の教材</td>
+  <td colspan=2></td>
 </tr>
 <tr bgcolor="#e0ffff">
   <td></td>
-  <td colspan=3>＜カエルの顔を描くための道具＞</td>
+  <td colspan=3>＜＞</td>
 </tr>
 <tr bgcolor="#e0ffff">
   <td></td>
   <td>要求</td>
   <td>RegFlog-01-01</td>
-  <td>絵を描く人は、提供されたA4用紙を使用する必要がある</td>
+  <td></td>
 </tr>
 <tr bgcolor="#e0ffff">
   <td></td>
   <td></td>
   <td>理由</td>
-  <td>データに取り込むため同じ<br>用紙サイズで統一する必要があるから</td>
+  <td></td>
 </tr>
 <tr bgcolor="#e0ffff">
   <td></td>
   <td></td>
   <td>説明</td>
-  <td>指定用紙以外に描かれるとデータ収集した際に、ファイリングがきれいにできない</td>
+  <td></td>
 </tr>
 <tr bgcolor="#e0ffff">
   <td></td>
   <td>要求</td>
   <td>RegFlog-01-02</td>
-  <td>絵を描く人は、提供されたペン（緑と黒）を使用する必要がある</td>
+  <td></td>
 </tr>
 <tr bgcolor="#e0ffff">
   <td></td>
   <td></td>
   <td>理由</td>
-  <td>決められた色を使用して、絵を描いてほしいから</td>
+  <td></td>
 </tr>
 <tr bgcolor="#e0ffff">
   <td></td>
   <td></td>
   <td>説明</td>
-  <td>指定色で絵を描く</td>
+  <td></td>
 </tr>
 <tr bgcolor="#fffff0">
   <td>要求</td>
   <td>RegFlog-02</td>
-  <td colspan=2>絵を描く人は、カエルの顔を書く必要がある</td>
+  <td colspan=2></td>
 </tr>
 <tr bgcolor="#fffff0">
   <td></td>
   <td >理由</td>
-  <td colspan=2>絵を描いてほしい人は、カエルの絵を描いてほしいと思っているから</td>
+  <td colspan=2></td>
 </tr>
 <tr bgcolor="#fffff0">
   <td></td>
@@ -281,19 +281,19 @@ LCReq-06
 </tr>
 <tr bgcolor="#e0ffff">
   <td></td>
-  <td colspan=3>＜カエルの顔の輪郭＞</td>
+  <td colspan=3>＜＞</td>
 </tr>
 <tr bgcolor="#e0ffff">
   <td></td>
   <td>要求</td>
   <td>RegFlog-02-01</td>
-  <td>絵を描く人は、カエルの輪郭を描く必要がある</td>
+  <td></td>
 </tr>
 <tr bgcolor="#e0ffff">
   <td></td>
   <td></td>
   <td>理由</td>
-  <td>顔には輪郭が必要だから</td>
+  <td></td>
 </tr>
 <tr bgcolor="#e0ffff">
   <td></td>
@@ -306,31 +306,31 @@ LCReq-06
   <td></td>
   <td></td>
   <td>SpecFlog-02-01-01</td>
-  <td>カエルの顔の輪郭と目を書く場合、緑色のペンを使う</td>
+  <td></td>
 </tr>
 <tr>
   <td></td>
   <td></td>
   <td>SpecFlog-02-01-02</td>
-  <td>カエルの顔の輪郭は、大きい”〇”で書く</td>
+  <td></td>
 </tr>
 <tr>
   <td></td>
   <td></td>
   <td>SpecFlog-02-01-03</td>
-  <td>カエルの目は、”〇”を2つ、顔の輪郭よりも小さく書く</td>
+  <td></td>
 </tr>
 <tr>
   <td></td>
   <td></td>
   <td>SpecFlog-02-01-04</td>
-  <td>カエルの目は、”〇”を2つ、顔の輪郭よりも小さく書く</td>
+  <td></td>
 </tr>
 <tr>
   <td></td>
   <td></td>
   <td>SpecFlog-02-01-02</td>
-  <td>カエルの目は顔の輪郭の外側、かつ12時を基準点（カエルの顔を真上から見たとき）とし、1時と11時の位置になるように書く</td>
+  <td></td>
 </tr>
 <tr bgcolor="#e0ffff">
   <td></td>
@@ -340,13 +340,13 @@ LCReq-06
   <td></td>
   <td>要求</td>
   <td>RegFlog-02-02</td>
-  <td>絵を描く人は、カエルの口を描く必要がある。</td>
+  <td></td>
 </tr>
 <tr bgcolor="#e0ffff">
   <td></td>
   <td></td>
   <td>理由</td>
-  <td>カエルの顔に口があったほうがかわいいから</td>
+  <td></td>
 </tr>
 <tr bgcolor="#e0ffff">
   <td></td>
@@ -358,35 +358,35 @@ LCReq-06
   <td></td>
   <td></td>
   <td>SpecFlog-02-02-01</td>
-  <td>カエルの口は、黒いペンを使う</td>
+  <td></td>
 </tr>
 <tr>
   <td></td>
   <td></td>
   <td>SpecFlog-02-02-02</td>
-  <td>カエルの口は、”―”を2つ使う</td>
+  <td></td>
 </tr>
 <tr>
   <td></td>
   <td></td>
   <td>SpecFlog-02-02-03</td>
-  <td>カエルの口は、アルファベットのVの字の形にする</td>
+  <td></td>
 </tr>
 <tr>
   <td></td>
   <td></td>
   <td>SpecFlog-02-02-04</td>
-  <td>カエルの口は、カエルの顔の中心に描く</td>
+  <td></td>
 </tr>
 <tr bgcolor="#fffff0">
   <td>要求</td>
   <td>RegFlog-03</td>
-  <td colspan=2>絵を描く人は、決められた時間内で絵を描く必要がある。</td>
+  <td colspan=2></td>
 </tr>
 <tr bgcolor="#fffff0">
   <td></td>
   <td>理由</td>
-  <td colspan=2>絵を描く人の要求の読解時間と絵を描く時間を統一するため</td>
+  <td colspan=2></td>
 </tr>
 <tr bgcolor="#fffff0">
   <td></td>
@@ -395,19 +395,19 @@ LCReq-06
 </tr>
 <tr bgcolor="#e0ffff">
   <td></td>
-  <td colspan=3>＜カエルの顔を描く時間＞</td>
+  <td colspan=3>＜＞</td>
 </tr>
 <tr bgcolor="#e0ffff">
   <td></td>
   <td>要求</td>
   <td>RegFlog-03-01</td>
-  <td>絵を描く人は、5分以内に絵を描く必要がある。</td>
+  <td></td>
 </tr>
 <tr bgcolor="#e0ffff">
   <td></td>
   <td></td>
   <td>理由</td>
-  <td>この要求が絵を描く人にとって、理解しやすいものであるか調査するため</td>
+  <td></td>
 </tr>
 <tr bgcolor="#e0ffff">
   <td></td>
