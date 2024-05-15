@@ -28,9 +28,6 @@
     <packagedElement xmi:type="uml:Class" xmi:id="_CFFVwOv_Ee66WfT32gg5Wg" name="Requirement28"/>
     <packagedElement xmi:type="uml:Class" xmi:id="_O1DWYOwBEe66WfT32gg5Wg" name="Requirement29"/>
     <packagedElement xmi:type="uml:Class" xmi:id="_pnYT8OwCEe66WfT32gg5Wg" name="Requirement30"/>
-    <packagedElement xmi:type="uml:Association" xmi:id="_GcelEOwFEe66WfT32gg5Wg"/>
-    <packagedElement xmi:type="uml:Association" xmi:id="_JEeiEOwFEe66WfT32gg5Wg"/>
-    <packagedElement xmi:type="uml:Association" xmi:id="_L9-ewOwFEe66WfT32gg5Wg"/>
     <packagedElement xmi:type="uml:Association" xmi:id="_Xpo0oOwFEe66WfT32gg5Wg"/>
     <packagedElement xmi:type="uml:Association" xmi:id="_Y8cgUOwFEe66WfT32gg5Wg"/>
     <packagedElement xmi:type="uml:Class" xmi:id="_RDq_sOwlEe6BzooM8Qq7bA" name="Requirement36"/>
@@ -46,6 +43,7 @@
     <packagedElement xmi:type="uml:Association" xmi:id="_JN1Z8OwnEe6BzooM8Qq7bA"/>
     <packagedElement xmi:type="uml:Association" xmi:id="_KlXNkOwnEe6BzooM8Qq7bA"/>
     <packagedElement xmi:type="uml:Association" xmi:id="_OgMrcOwnEe6BzooM8Qq7bA"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_NFaVoAaYEe-shLKuPPNI-g" client="_gKTroOv5Ee66WfT32gg5Wg" supplier="_kq690Ov-Ee66WfT32gg5Wg"/>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_ojPj8OviEe66WfT32gg5Wg">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ojYt4OviEe66WfT32gg5Wg" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#/"/>
